@@ -67,7 +67,9 @@ example: [Link](http://cyounes.com/basicmenu/doc/example1_8c-example.html)
 >for more functions and examples please visit [this page](http://cyounes.com/basicmenu/doc/examples.html)
 
 
-## Are you a developer? Fork me on GitHub
+## Are you a developer?
+
+### Fork me on GitHub:
 
 I'll be very happy to take pull requests from others, Go ahead and fork me.
 
