@@ -1,0 +1,128 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Basicmenu by cyounes</title>
+
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <script src="javascripts/scale.fix.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>Basicmenu</h1>
+        <p>Add a menu to your console application easily</p>
+        <p class="view"><a href="https://github.com/cyounes/basicmenu">View the Project on GitHub <small>cyounes/basicmenu</small></a></p>
+        <ul>
+          <li><a href="https://github.com/cyounes/basicmenu/zipball/master">Download <strong>ZIP File</strong></a></li>
+          <li><a href="https://github.com/cyounes/basicmenu/tarball/master">Download <strong>TAR Ball</strong></a></li>
+          <li><a href="https://github.com/cyounes/basicmenu">View On <strong>GitHub</strong></a></li>
+        </ul>
+      </header>
+      <section>
+        <h1>BasicMenu Library</h1>
+
+<pre><code>    ______           _     ___  ___                 
+    | ___ \         (_)    |  \/  |                 
+    | |_/ / __ _ ___ _  ___| .  . | ___ _ __  _   _ 
+    | ___ \/ _` / __| |/ __| |\/| |/ _ \ '_ \| | | |
+    | |_/ / (_| \__ \ | (__| |  | |  __/ | | | |_| |
+    \____/ \__,_|___/_|\___\_|  |_/\___|_| |_|\__,_|                                             
+</code></pre>
+
+<p><a href="http://cyounes.com/projects/basicmenu">Basicmenu</a> is a an open source library coded in C, allows the programmer to create and display a menu easily in his/her console application on linux and mac os x, works with C/C++ programs.</p>
+
+<h3>Example of program uses basicmenu library</h3>
+
+<p><img src="http://cyounes.com/portail_files/Screen-Shot-2012-09-26-at-01.27.19.png" alt="BasicMenu Library"></p>
+
+<h2>Installation:</h2>
+
+<p>There is no installation required, you need just to download the basicmenu.h file, include it in your code then start use the libray :)</p>
+
+<pre><code>#include "basicmenu.h"
+</code></pre>
+
+<h2>Essential functions:</h2>
+
+<p>To use this library , you have just to learn about some basic functions</p>
+
+<h3>1. Start the basic menu library :</h3>
+
+<p>First you need to tell the program that you will use the library 
+to do this, invoke <code>startBasicMenu()</code> function in the beginning of the main.</p>
+
+<h3>2. Create and initialize a new menu:</h3>
+
+<p>To create a new menu you need to declare it with its type: 
+    custom_Menu* mymenu; 
+To initialize it with the <code>init_new_menu()</code> function: 
+    init_new_menu (&amp;mymenu);</p>
+
+<h3>3. Add a new item to the menu:</h3>
+
+<p>Any menu , need to have at least tow items, to add a new item to the menu use the <code>addNewItem()</code> function: 
+    addNewItem (&amp;mymenu , "Choice number one!");
+    addNewItem (&amp;mymenu , "Choice number tow!");
+You can add unlimited number of items, but be careful to don't exceed the console size :) </p>
+
+<blockquote>
+<p>see the TODO list.</p>
+</blockquote>
+
+<h3>4. Put and display a menu into the program:</h3>
+
+<p>To display the menu you need to invoke the <code>put_menu()</code> function.
+example: <a href="http://cyounes.com/basicmenu/doc/example1_8c-example.html">Link</a></p>
+
+<h2>TODO:</h2>
+
+<ul>
+<li>Allow the programmer to add unlimited items to the menu.</li>
+<li>Add a scroll menu option.</li>
+<li>Add the maximum of items to shown on the menu.</li>
+</ul><h2>Useful functions:</h2>
+
+<ul>
+<li>
+<a href="http://cyounes.com/basicmenu/doc/basicmenu_8h.html#af25248c9cb3d0736be1409117da84682">item_border_ON()</a> &amp; <a href="http://cyounes.com/basicmenu/doc/basicmenu_8h.html#a1c21c2b1ab331a2c67ef05a9284218da">item_border_OFF()</a>
+</li>
+<li>
+<a href="http://cyounes.com/basicmenu/doc/basicmenu_8h.html#a704a37ae8f690f7a54186ee146309cb6">menu_border_ON()</a> &amp;  <a href="http://cyounes.com/basicmenu/doc/basicmenu_8h.html#a0d9a10f8ced566cb797395039f35fb9d">menu_border_OFF()</a>;</li>
+<li>
+<a href="http://cyounes.com/basicmenu/doc/basicmenu_8h.html#ad089e1df4782b887c8eefe307bd42fd4">BG_COLOR_ON()</a> &amp; <a href="http://cyounes.com/basicmenu/doc/basicmenu_8h.html#a538de9d0a829e45b7fe3d7930bc81a03">BG_COLOR_OFF()</a>
+</li>
+</ul><blockquote>
+<p>for more functions and examples please visit <a href="http://cyounes.com/basicmenu/doc/examples.html">this page</a></p>
+</blockquote>
+
+<h2>Are you a developer?</h2>
+
+<h3>Fork me on GitHub:</h3>
+
+<p>I'll be very happy to take pull requests from others, Go ahead and fork me.</p>
+
+<h3>Documentation:</h3>
+
+<p>for code documentation please visit  <a href="http://cyounes.com/basicmenu/doc/index.html">http://cyounes.com/basicmenu/doc/index.html</a></p>
+
+<h2>Who are you ?</h2>
+
+<p>I'm <a href="http://twitter.com/cyounes">Younes CHEIKH</a>, read more <a href="http://cyounes.com/about">about me</a> </p>
+      </section>
+    </div>
+    <footer>
+      <p>Project maintained by <a href="https://github.com/cyounes">cyounes</a></p>
+      <p>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></p>
+    </footer>
+    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
+    
+  </body>
+</html>
